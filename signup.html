@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" lang="en-us">
+  <link rel="stylesheet" href="layout.css">
+  <title>Join the Mika Fan Club</title>
+</head>
+
+<body>
+
+  <div>
+    <img src="https://live.staticflickr.com/65535/52555185676_35a1d61149_w.jpg">
+    <img src="https://live.staticflickr.com/65535/52555654950_f285c4fba5_w.jpg">
+    <img src="https://live.staticflickr.com/65535/52555185846_ace81227d4_w.jpg">
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Signup</a>
+    <a href="links.html">Links</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <div>
+    <div>
+      <h1>Fan Club Member Benefits:</h1>
+      <h3>Join now to receive:</h3>
+      <ul>
+        <li>Unlimited petting access</li>
+        <li>Mika play dates</li>
+        <li>Access to the Mika newsletter</li>
+        <li>Mika's cell phone number</li>
+        <li>Entry to Mika's private Discord</li>
+        <li>Raffle entry to win Mika prints</li>
+      </ul>
+    </div>
+
+    <div>
+      <form action="/form-handling-url" method="post">
+        <fieldset>
+          <legend>Join Now</legend>
+
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="first_name">
+
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="last_name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email_address">
+
+          <label for="perk">Select Your First Perk</label>
+          <select id="perk" name="user_perk_selection">
+            <option value="discord">Discord</option>
+            <option value="newsletter">Newsletter</option>
+            <option value="playDate">Play Date</option>
+          </select>
+
+          <label for="aboutUser">Tell Us About Yourself</label>
+          <textarea id="about" name="about_uer"></textarea>
+
+          <button type="submit">Join Now!</button>
+
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="signup.html">Signup</a>
+      <a href="links.html">Links</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+  </footer>
+
+</body>
+
+</html>

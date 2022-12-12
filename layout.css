@@ -1,0 +1,170 @@
+body {
+  background-color: #f5ebe0;
+  font-family: "roboto";
+  font-size: 20px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #edede9;
+  border-top: solid 5px;
+  border-bottom: solid 5px;
+  border-color: #cdaa97;
+  padding: 0.5em;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  margin-top: auto;
+}
+
+img {
+  border: solid 0.25em #d6ccc2;
+  max-width: 309px;
+  max-height: 408px;
+}
+
+h1 {
+  font-family: "lobster";
+  text-align: center;
+  font-size: 45px;
+}
+
+h2 {
+  font-family: "lobster";
+  font-size: 35px;
+}
+
+form {
+  width: 15em;
+}
+
+fieldset {
+  border: solid 0.15em #d6ccc2;
+  background-color: #edede9;
+  display: flex;
+  flex-direction: column;
+  height: 30em;
+  margin-bottom: 5em;
+}
+
+button {
+  margin: auto;
+  height: 2em;
+  width: 8em;
+}
+
+.index-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6em;
+}
+
+.checkbox {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 0.5em 0em 0.3em 3.5em;
+}
+
+.link-spacer {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.gallery-img {
+  height: 200px;
+  width: 200px;
+}
+
+.gallery-wrapper {
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px;
+  row-gap: 50px;
+  justify-content: space-around;
+  margin: 4em 100px 6em 100px;
+}
+
+#about {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  height: 10em;
+  width: auto;
+}
+
+#link-photo {
+  margin-top: 4em;
+}
+
+#input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  gap: 5px;
+}
+
+#checkbox-container {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.5em;
+  width: 100%;
+  height: 2.5rem;
+}
+
+#link-padding {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#banner-padder {
+  margin: 90px;
+}
+
+#img-pad-bottom {
+  margin-bottom: 1em;
+}
+
+#link-top-pad {
+  margin-top: 3em;
+}
+
+#signup-image {
+  width: 216px;
+  height: 288px;
+}
+
+#top-nav-margin-bottom {
+  margin-bottom: 44px;
+}
+
+#center-align {
+  text-align: center;
+}
+
+#space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+}

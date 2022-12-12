@@ -4,78 +4,104 @@
 <head>
   <meta charset="utf-8" lang="en-us">
   <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <title>Join the Mika Fan Club</title>
 </head>
 
 <body>
+  <div id="page-container">
+    <div id="content-wrap">
 
-  <div>
-    <img src="https://live.staticflickr.com/65535/52555185676_35a1d61149_w.jpg">
-    <img src="https://live.staticflickr.com/65535/52555654950_f285c4fba5_w.jpg">
-    <img src="https://live.staticflickr.com/65535/52555185846_ace81227d4_w.jpg">
-  </div>
+      <h1 id="banner-padder">Join The Mika Fan Club!</h1>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="signup.html">Signup</a>
-    <a href="links.html">Links</a>
-    <a href="gallery.html">Gallery</a>
-  </nav>
+      <nav id="top-nav-margin-bottom">
+        <a href="index.html">Home</a>
+        <a href="signup.html">Signup</a>
+        <a href="links.html">Links</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
 
-  <div>
-    <div>
-      <h1>Fan Club Member Benefits:</h1>
-      <h3>Join now to receive:</h3>
-      <ul>
-        <li>Unlimited petting access</li>
-        <li>Mika play dates</li>
-        <li>Access to the Mika newsletter</li>
-        <li>Mika's cell phone number</li>
-        <li>Entry to Mika's private Discord</li>
-        <li>Raffle entry to win Mika prints</li>
-      </ul>
+      <div id="space-evenly">
+        <img id="signup-image" src="https://live.staticflickr.com/65535/52555185846_ace81227d4_w.jpg">
+        <img id="signup-image" src="https://live.staticflickr.com/65535/52555185676_35a1d61149_w.jpg">
+        <img id="signup-image" src="https://live.staticflickr.com/65535/52555654950_f285c4fba5_w.jpg">
+      </div>
+
+      <h2 id="center-align">Fan Club Member Benefits:</h2>
+
+      <div class="index-container">
+        <div>
+          <h3 id="center-align">Join now to receive:</h3>
+          <ul>
+            <li>Unlimited petting access</li>
+            <li>Mika play dates</li>
+            <li>Access to the Mika newsletter</li>
+            <li>Mika's cell phone number</li>
+            <li>Entry to Mika's private Discord</li>
+            <li>Raffle entry to win Mika prints</li>
+          </ul>
+        </div>
+
+        <div id="center-align">
+          <form id="center-align" action="/form-handling-url" method="post">
+            <fieldset id="center-align">
+              <legend>Join Now</legend>
+
+              <!-- First Name, Last Name, Email text fields -->
+              <div id="input-container">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="first_name">
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="last_name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email_address">
+              </div>
+
+              <!-- Checkboxes -->
+              <div id="checkbox-container">
+                <div class="checkbox">
+                  <input type="checkbox" id="discord" name="user_perk_discord">
+                  <label for="discord">Discord</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="newsletter" name="user_perk_newsletter">
+                  <label for="newsletter">Newsletter</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="playDate" name="user_perk_playDate">
+                  <label for="playDate">Play Date</label>
+                </div>
+              </div>
+
+              <!-- Text Area -->
+              <label for="aboutUser">Tell Us About Yourself</label>
+              <textarea id="about" name="about_uer"></textarea>
+
+              <!-- Submit Button -->
+              <button type="submit">Join Now!</button>
+
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="signup.html">Signup</a>
+          <a href="links.html">Links</a>
+          <a href="gallery.html">Gallery</a>
+        </nav>
+      </footer>
+
+
     </div>
-
-    <div>
-      <form action="/form-handling-url" method="post">
-        <fieldset>
-          <legend>Join Now</legend>
-
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="first_name">
-
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="last_name">
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email_address">
-
-          <label for="perk">Select Your First Perk</label>
-          <select id="perk" name="user_perk_selection">
-            <option value="discord">Discord</option>
-            <option value="newsletter">Newsletter</option>
-            <option value="playDate">Play Date</option>
-          </select>
-
-          <label for="aboutUser">Tell Us About Yourself</label>
-          <textarea id="about" name="about_uer"></textarea>
-
-          <button type="submit">Join Now!</button>
-
-        </fieldset>
-      </form>
-    </div>
   </div>
-
-  <footer>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="signup.html">Signup</a>
-      <a href="links.html">Links</a>
-      <a href="gallery.html">Gallery</a>
-    </nav>
-  </footer>
-
 </body>
 
 </html>
